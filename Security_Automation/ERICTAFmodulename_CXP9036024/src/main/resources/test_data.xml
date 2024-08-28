@@ -1,0 +1,803 @@
+<?xml version="1.0"?>
+<root param="Test_data">
+<testsuit param="MSRBSV2">     
+               <testcase param="TC01">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode automatic -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC02">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode manual -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC03">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode automatic -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC04">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode manual -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC05">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -to </item>
+                              <item param="pattern">Failed :                       2</item>
+               </testcase>
+               <testcase param="TC06">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -file </item>
+                              <item param="pattern">Failed :                       2</item>
+               </testcase>
+               <testcase param="TC07">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC08">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC09">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -file </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC10">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_trust -subjectDN </item>
+                              <item param="cmd2"> -serial </item>
+                              <item param="cmd3"> -mode enable -to </item>
+                              <item param="pattern">Failed :                       1</item>
+               </testcase>
+               <testcase param="TC11">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node list</item>
+                              <item param="pattern"> PASSED</item>
+               </testcase>
+               <testcase param="TC12">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode automatic -file </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC13">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode manual -file </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC14">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type syslog -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC15">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type netconf -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC16">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type ldapcert -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC17">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC18">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type netconf -to  </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC19">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type ldapcert -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC20">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type syslog -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC21">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type ldapcert syslog -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC22">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type netconf syslog -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC23">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type netconf ldapcert -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC24">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> /opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -to </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC25">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> caasAdmin list state_syslog -type radio_node -to </item>
+                              <item param="pattern">Deactivated</item>
+                              <item param="pattern1">Activated</item>
+                              <item param="pattern2">The radio_node node "xxxx" for OSS "ossmaster" does not exist</item>
+               </testcase>
+               <testcase param="TC26">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> caasAdmin list state_syslog -type radio_node -to </item>
+                              <item param="pattern">Deactivated</item>
+                              <item param="pattern1">Activated</item>
+                              <item param="pattern2">for OSS "ossmaster" does not exist</item>
+               </testcase>
+               <testcase param="TC27">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> caasAdmin list state_syslog -type radio_t_node -to </item>
+                              <item param="pattern">Deactivated</item>
+                              <item param="pattern1">Activated</item>
+                              <item param="pattern2">for OSS "ossmaster" does not exist</item>
+               </testcase>
+               <testcase param="TC28">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">caasAdmin set logserverip -type RADIO_T_NODE -serverIP 192.168.0.4 -to </item>
+                              <item param="cmd1"> caasAdmin list logserver -type radio_t_node -to </item>
+                              <item param="pattern">Not Configured</item>
+                              <item param="pattern1">192.168.0.4</item>
+               </testcase>
+                              <testcase param="TC29">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">caasAdmin set logserverip -type RADIO_T_NODE -serverIP 192.168.0.4 -to </item>
+                              <item param="cmd1"> caasAdmin list logserver -type radio_t_node -to </item>
+                              <item param="pattern">Not Configured</item>
+                              <item param="pattern1">192.168.0.4</item>
+               </testcase>
+               <testcase param="TC30">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">caasAdmin set logserverip -type RADIO_NODE -serverIP 192.168.0.4 -to </item>
+                              <item param="cmd1"> caasAdmin list logserver -type radio_node -to </item>
+                              <item param="pattern">Not Configured</item>
+                              <item param="pattern1">192.168.0.4</item>
+               </testcase>
+               <testcase param="TC31">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">caasAdmin set logserverip -type RADIO_NODE -serverIP 192.168.0.4 -to </item>
+                              <item param="cmd1"> caasAdmin list logserver -type radio_node -to </item>
+                              <item param="pattern">Not Configured</item>
+                              <item param="pattern1">192.168.0.4</item>
+               </testcase>
+               <testcase param="TC32">
+                              <item param="Enabled">true</item>
+                              <item param="cmd"> caasAdmin list logserver -type radio_node -to </item>
+                              <item param="pattern">Not Configured</item>
+                              <item param="pattern1">192.168.0.4</item>
+               </testcase>
+               <testcase param="TC33">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config help  </item>
+                              <item param="pattern">Syntax:</item>
+               </testcase>
+               <testcase param="TC34">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_T_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC35">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_T_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to  </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC36">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> caasAdmin list ldap_config -type RADIO_T_NODE -to </item>
+                              <item param= "pattern">Success </item>
+               </testcase>
+               <testcase param="TC37">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin list ldap_config -type RADIO_T_NODE -to </item>
+                              <item param= "pattern">Success </item>
+               </testcase>
+               <testcase param="TC38">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_T_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to  </item>
+                              <item param="pattern">Successful :                   1</item>
+                              <item param="pattern1">does not exist</item>
+               </testcase>
+               <testcase param="TC39">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/caasAdmin set ldap_config -type RADIO_T_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to </item>
+                              <item param= "pattern">Failed :                       1 </item>
+               </testcase>
+               <testcase param="TC40">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_T_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to    </item>
+                              <item param= "pattern">Failed :                       1 </item>
+                              <item param="pattern1">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC41">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin list ldap_config -type RADIO_T_NODE -to </item>
+                              <item param= "pattern">Failed</item>
+               </testcase>
+               <testcase param="TC42">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1"> caasAdmin list ldap_config -type RADIO_T_NODE -to    </item>
+                              <item param= "pattern">Success</item>
+                              <item param="pattern1">Failed</item>
+               </testcase>
+               <testcase param="TC43">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to    </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC44">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to    </item>
+                              <item param="pattern">Successful :                   2</item>
+               </testcase>
+               <testcase param="TC45">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">  caasAdmin list ldap_config -type RADIO_NODE -to </item>
+                              <item param= "pattern">Success </item>
+               </testcase>
+               <testcase param="TC46">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">  caasAdmin list ldap_config -type RADIO_NODE -to </item>
+                              <item param= "pattern">Success </item>
+               </testcase>
+               <testcase param="TC47">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">  caasAdmin set ldap_config -type RADIO_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to  </item>
+                              <item param= "pattern">Failed</item>
+               </testcase>
+               <testcase param="TC48">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set ldap_config -type RADIO_NODE -baseDn dc=vts,dc=com -bindDn cn=proxyagent,ou=com,dc=vts,dc=com -bindPassword ldapadmin -primaryIP 192.168.0.4 -fallbackIP 192.168.0.7 -tlsMode LDAPS -useTls YES -reasonText 'ldap conf' -to    </item>
+                              <item param="pattern">Successful :                   1</item>
+               </testcase>
+               <testcase param="TC49">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">  caasAdmin list ldap_config -type RADIO_NODE -to </item>
+                              <item param= "pattern">Failed</item>
+               </testcase>
+               <testcase param="TC50">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">  caasAdmin list ldap_config -type RADIO_NODE -to </item>
+                              <item param= "pattern">Success</item>
+                              <item param= "pattern1">Failed</item>
+               </testcase>
+               <testcase param="TC51">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode automatic -file </item>
+                <item param="pattern">Successful :                   2</item>
+                <item param="compareString">Success</item>
+        </testcase>    
+        <testcase param="TC52">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode manual -file </item>
+                <item param="pattern">Successful :                   2</item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC53">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -mode automatic -file </item>
+                <item param="pattern">Successful :                   2</item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC54">
+                <item param="Enabled">true</item>      
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -expiryAlarmThreshold 2 -to </item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC55">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -expiryAlarmThreshold 2 -to </item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC56">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node config_renew -expiryAlarmThreshold 2 -file </item>
+                <item param="pattern">Successful :                   2</item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC57">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node distribute -cert_type netconf ldapcert syslog ipsec -to </item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC58">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node list -type trusted_certs -to </item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC59">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node list -type trusted_certs -to </item>
+                <item param="compareString">Success</item>
+        </testcase>
+        <testcase param="TC60">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin cred radio_node list -type trusted_certs -file  </item>
+                <item param="compareString">Success</item>
+        </testcase>
+              
+</testsuit>
+<testsuit param="SSL-ciphers">  
+               <testcase param="TC06">
+                              <item param="Enabled">true</item>
+                              <item param="cmd">/opt/mysql/bin/mysql --socket=/tmp/mysql-50200.sock --user=sqladmin --password=PY7A102101B --database='caas_authorization' -e "show tables" -NB | grep -i 'view_target_group'</item>
+                              <item param="compareString">view_target_group</item>
+               </testcase>                       
+</testsuit>
+<testsuit param="MULTIRAT">   
+               <testcase param="TC01">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/ossmasterNECertCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>                             
+                              <item param="cmd2">grep TLS_1_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>
+               </testcase>        
+        <testcase param="TC02">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/COMInfRootCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>          
+                <item param="cmd2">grep TLS_2_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC03">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep TLS_3_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>          
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/DSCertCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC04">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep TLS_4_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>          
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/RACSACertCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC05">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep TLS_5_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>          
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/ossmasterMSCertCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC06">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep TLS_6_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>           
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/ossmasterRootCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC07">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep IPSEC_7_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>          
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/LTEIPSecSEGRootCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+        <testcase param="TC08">
+                <item param="Enabled">true</item>
+                <item param="cmd1">grep IPSEC_8_certFingerPrint= /opt/ericsson/aiws/conf/ossmaster_enrollmentdata.properties | cut -d= -f2</item>          
+                <item param="cmd2">/usr/sfw/bin/openssl x509 -in /opt/ericsson/csa/certs/LTEIPSecNEcusRootCA.pem -noout -fingerprint -sha1 | cut -d= -f2</item>
+        </testcase>
+</testsuit>
+<testsuit param="AXE"> 
+               <testcase param="TC01">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">pkiAdmin list nodes -type msc</item>
+               </testcase>
+<testcase param="TC02">
+                              <item param="Enabled">true</item>
+                              <item param="cmd2">pkiAdmin list nodes -type bsc</item>
+               </testcase>                       
+</testsuit>
+<testsuit param="CRLTesting">  
+               <testcase param="TC01">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl expperiod help</item>
+                              <item param="compareString"></item>
+               </testcase>                       
+        <testcase param="TC02">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl expperiod</item>
+        </testcase>
+ 
+        <testcase param="TC03">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl expperiod -set 30d -name AdminCA1</item>
+                <item param="cmd2">/opt/ericsson/cadm/bin/pkiAdmin crl expperiod</item>
+                <item param="cmd3">/opt/ericsson/cadm/bin/pkiAdmin crl expperiod -set 1d -name AdminCA1</item>
+        </testcase>
+ 
+        <testcase param="TC04">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl generate help</item>
+        </testcase>
+ 
+        <testcase param="TC05">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl generateperiod help</item>
+        </testcase>
+ 
+        <testcase param="TC06">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin crl generateperiod</item>
+        </testcase>
+</testsuit>
+<testsuit param="Telstra">          
+               <testcase param="TC01">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin help sacpp </item>
+               </testcase>
+               <testcase param="TC02">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action activate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC03">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action activate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC04">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action activate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC05">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action Deactivate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC06">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action Deactivate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC07">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action Deactivate_sftpAndssh -to </item>
+               </testcase>        
+               <testcase param="TC08">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>        
+               <testcase param="TC09">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>
+               <testcase param="TC10">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>
+               <testcase param="TC11">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_nw -to </item>
+                              <item param="cmd2">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>                       
+               <testcase param="TC12">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_nw -to </item>
+               </testcase>
+               <testcase param="TC13">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_nw -to </item>
+               </testcase>
+               <testcase param="TC14">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_nw -to </item>
+               </testcase>
+               <testcase param="TC15">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_db -to </item>
+               </testcase>
+               <testcase param="TC16">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_db -to </item>
+               </testcase>
+               <testcase param="TC17">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_db -to </item>
+               </testcase>
+               <testcase param="TC18">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action sync_db -to </item>
+               </testcase>
+               <testcase param="TC19">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action sync_db -to </item>
+               </testcase>
+               <testcase param="TC20">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action sync_db -to </item>
+               </testcase>
+               <testcase param="TC21">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action activate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC22">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action listSecLevel_nw -to </item>
+                              <item param="cmd2">caasAdmin sacpp -action Deactivate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC23">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action deactivate_sl2 -to </item>
+               </testcase>
+               <testcase param="TC24">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action deactivate_sl2 -to </item>
+               </testcase>
+               <testcase param="TC25">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action deactivate_sl2 -to </item>
+               </testcase>
+               <testcase param="TC26">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin init_enroll </item>
+                              <item param="cmd2">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>
+               <testcase param="TC27">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin init_enroll </item>
+                              <item param="cmd2">caasAdmin distribute cert -type corbapeers to </item>
+                              <item param="cmd3">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>
+               <testcase param="TC28">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action activate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC29">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action Deactivate_sftpAndssh -to </item>
+               </testcase>
+               <testcase param="TC30">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action act_sl2 -to </item>
+               </testcase>
+               <testcase param="TC31">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action deactivate_sl2 -to </item>
+               </testcase>
+               <testcase param="TC32">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action act_sl2 -to </item>
+                              <item param="cmd2">caasAdmin sacpp -action listSecLevel_nw -to </item>
+               </testcase>
+               <testcase param="TC33">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action deactivate_sl2 -to </item>
+                              <item param="cmd2">caasAdmin sacpp -action listSecLevel_nw -to </item>
+               </testcase>
+               <testcase param="TC34">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action sync_db -to </item>
+               </testcase>
+               <testcase param="TC35">
+                              <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin sacpp -action sync_db -to </item>
+               </testcase>
+</testsuit>
+<testsuit param="CIPHER">    
+        <testcase param="TC01">
+                <item param="Enabled">true</item>
+                <item param="cmd1">caasAdmin sync</item>
+        </testcase>
+ 
+        <testcase param="TC02">
+                <item param="Enabled">true</item>
+                <item param="cmd1">caasAdmin list targets</item>
+        </testcase>
+ 
+        <testcase param="TC03">
+                <item param="Enabled">true</item>
+                <item param="cmd1">pkiAdmin list node -type radio_node</item>
+        </testcase>
+ 
+        <testcase param="TC04">
+                <item param="Enabled">true</item>
+                <item param="cmd1">pkiAdmin list node -type radio_t_node</item>
+       </testcase>
+ 
+        <testcase param="TC05">
+                <item param="Enabled">true</item>
+                <item param="cmd1">pkiAdmin list node -type stn</item>
+        </testcase>
+ 
+        <testcase param="TC06">
+                <item param="Enabled">true</item>
+                <item param="cmd1">caasAdmin pico list nodes</item>
+        </testcase> 
+                               <testcase param="TC07">
+                <item param="Enabled">true</item>
+                <item param="cmd">/opt/ericsson/cadm/bin/pkiAdmin ciphers cred setx</item>
+        </testcase>
+                              <testcase param="TC08">
+                <item param="Enabled">true</item>
+                <item param="cmd">pkiAdmin cred com_ecim list</item>
+        </testcase>
+                              <testcase param="TC09">
+                <item param="Enabled">true</item>
+                <item param="cmd">pkiAdmin cred cpp list -mode ipsec -to </item>
+        </testcase>
+                              <testcase param="TC10">
+                <item param="Enabled">true</item>
+                <item param="cmd">pkiAdmin cred cpp list -mode tls -to </item>
+        </testcase>
+</testsuit>
+<testsuit param="RTSEL"> 
+        <testcase param="TC01">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase> 
+        <testcase param="TC02">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC03">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC04">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC05">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC06">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin set logserverip -type RADIO_T_NODE -serverIP 192.168.0.4 -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC07">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC08">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin list state_syslog -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC09">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC10">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin set logserverip -type RADIO_NODE -serverIP 192.168.0.4 -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC11">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC12">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC13">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin set logserverip -type RADIO_NODE -serverIP 192.168.0.4 -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC14">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC15">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin set logserverip -type RADIO_T_NODE -serverIP 192.168.0.4 -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC16">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin set logserverip -type RADIO_NODE -serverIP 192.168.0.4 -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC17">
+                <item param="Enabled">true</item>
+                <item param="cmd1">/opt/ericsson/cadm/bin/pkiAdmin cred radio_t_node distribute -cert_type netconf ldapcert syslog ipsec -to </item>
+                <item param="cmd">caasAdmin verify syslogcert -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC18">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin verify syslogcert -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC19">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin list state_syslog -type RADIO_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC20">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_T_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC21">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC22">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC23">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC24">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC25">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_T_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC26">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_T_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC27">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC28">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC29">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC30">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC31">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+         <testcase param="TC32">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin deactivate_rtsel -type RADIO_T_NODE -to </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC33">
+                <item param="Enabled">true</item>
+                              <item param="cmd1">caasAdmin set logserverip -type RADIO_T_NODE -serverIP 192.168.0.4 -to </item>
+                <item param="cmd">caasAdmin activate_rtsel -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+        <testcase param="TC34">
+                <item param="Enabled">true</item>
+                <item param="cmd">caasAdmin list state_syslog -type RADIO_T_NODE -to  </item>
+                <item param="compareString"></item>
+        </testcase>
+</testsuit>
+</root>

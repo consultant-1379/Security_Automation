@@ -1,0 +1,42 @@
+*** Settings ***
+Resource        /home/design/PF/home/design/PFSEC/common_sec_keywords_1.txt
+
+*** Variables ***
+${IMAGE_PATH}=  /home/design/PF/home/design/PFSEC/secimg/demo/images/img/
+
+
+*** Test cases ***
+1st test case
+   initial enrollment
+2nd test case
+   corba distributor
+3rd test case
+   laad distributor
+4th test case
+   renew
+5th test case
+   initial enrollment multiple nodes
+6th test case
+   corba distributor multiple nodes
+7th test case
+   laad distributor multiple nodes
+8th test case
+   renew multiple nodes
+9th test case
+   initial enrollment on radio node
+10th test case
+   corba distributor on radio node
+11th test case
+   laad distributor on radio node
+12th test case
+   renew on radio node
+13th test case
+	corba distributor multiple different nodes
+14th test case
+	laad distributor multiple different nodes
+15th test case
+    ipsec enroll on erbs node
+16th test case
+	ipsec enroll on radio node
+17th test case
+	ipsec enroll on erbs and radio node

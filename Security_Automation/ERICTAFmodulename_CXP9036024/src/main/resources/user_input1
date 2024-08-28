@@ -1,0 +1,46 @@
+###Caas user details
+caas_user = "demo"
+
+
+###Default nodes
+cpp_node_default = "ossmaster:LTE01ERBS00001"
+radio_node_default = "ossmaster:LTE11dg2ERBS00001"
+radio_t_node_default = "ossmaster:TCU03-15B01"
+stn_node_default = "ossmaster:MSC23BSC46-STN-T15A-TCU02-01"
+pico_node_default = "ossmaster:RNC_demo01PRBS_demo01"
+msc_node_default = "ossmaster:MSC24"
+bsc_node_default = "ossmaster:BSC48"
+
+cpp_node = "ERBS_test301"
+cpp_node1 = " ERBS_test102"
+
+
+radio_node = "MSRBS-V2_demo01"
+radio_t_node = " TCU04_demo01"
+node = " ossmaster:MSRBS-V2_demo02"
+radio_node1 = "MSRBS-V2_demo03"
+mul_radio_node = " ossmaster:MSRBS-V2_demo01 ossmaster:MSRBS-V2_demo02"
+AI_radio_node = " ossmaster:MSRBS-V2_demo02"
+mix_radio_node = " ossmaster:TCU04_demo01 ossmaster:MSRBS-V2_demo01"
+mul_radio_t_node = " ossmaster:TCU04_demo01 ossmaster:TCU04_demo02"
+unreach_radio_t_node = " TCU04_demo01 TCU04-16B-01"
+invalid_radio_node = " MSRBS-V2 MSRBS-V2_demo01 MSRBS-V2_demo02"
+invalid_radio_t_node = " TCU01 TCU04_demo02"
+
+msrbs_node =" MSRBS-V2_demo01"
+msrbs_node1="  MSRBS-V2_demo02"
+msrbs_node_stopped =" MSRBS-V2_demo04"
+wrong_subjectDN=" CN=ossmasterXXCertCA/OU=ericssonOAM/O=Ericsson"
+wrong_serial= " 00:00:00:00"
+correct_subjectDN=" CN=ossmasterMSCertCA,OU=ericssonOAM,O=Ericsson"
+correct_serial=" 54:14:EF:57"
+rnc_node = " RNC_demo01"
+rbs_node = " RNC_demo01RBS_demo01"
+erbs_node = " ERBS_demo01"
+erbs_node1 = " ERBS_demo06"
+erbs_node_stopped =" ERBS_demo03"
+erbs_node_init_enroll = " ossmaster:ERBS_demo04"
+erbs_node_corba_peer = " ossmaster:ERBS_demo05"
+tcu_node = " TCU04_demo01"
+tcu_node1 = " TCU04_demo02"
+tcu_node_stopped = " TCU04_demo03"

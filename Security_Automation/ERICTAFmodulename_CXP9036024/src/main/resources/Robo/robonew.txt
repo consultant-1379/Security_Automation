@@ -1,0 +1,585 @@
+*** Settings ***
+Library   SikuliLibrary
+Library   SSHLibrary
+
+
+*** Variables ***
+${IMAGE_PATH}=  /home/design/PF/home/design/PFSEC/secimg/demo/images/img/
+
+
+
+*** keywords ***
+initial enrollment
+   Add image path       ${IMAGE_PATH}
+   click   terminal1.png
+   sleep   5
+   wait until screen contain   design_new.png   30
+   click   design_new.png
+   sleep   5
+   input text   design_new.png   ssh -X root@atvts1465.athtem.eei.ericsson.se
+   press special key   ENTER
+   wait until screen contain   password3.png   30
+   input text   password3.png   shroot
+   press special key   ENTER
+   sleep   5
+   input text   design4.png   ssh -X caas007@omsas
+   press special key   ENTER
+   wait until screen contain   Password5.png   30
+   input text   Password5.png   caas123
+   press special key   ENTER
+   sleep   5
+   click   maximize6.png
+   sleep   5
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   initenroll9.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode1.png   30
+   click   enode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   closebutton18.png
+   sleep   10
+corba distributor
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiCaasAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   caasgui19.png   30
+   click   distributor20.png
+   sleep   5
+   click   corbapeers21.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode1.png   30
+   click   enode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+laad distributor
+   click   distributor20.png
+   sleep   5
+   click   laadtab25.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode1.png   30
+   click   enode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   caasguiclose28.png 
+renew
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   Renewtab.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode1.png   30
+   click   enode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   reasontab.png
+   sleep   5
+   press special key	DOWN
+   press special key	DOWN
+   press special key	DOWN
+   press special key	ENTER
+   click   Renewbutton.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5    
+initial enrollment multiple nodes
+   sleep   5
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   initenroll9.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   clisk   enode3.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   closebutton18.png
+   sleep   10
+corba distributor multiple nodes
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiCaasAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   caasgui19.png   30
+   click   distributor20.png
+   sleep   5
+   click   corbapeers21.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   click   enode3.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+laad distributor multiple nodes
+   click   distributor20.png
+   sleep   5
+   click   laadtab25.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   click   enode3.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   caasguiclose28.png 
+renew multiple nodes
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   Renewtab.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   click   enode3.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   reasontab.png
+   sleep   5
+   press special key	DOWN
+   press special key	DOWN
+   press special key	DOWN
+   press special key	ENTER
+   click   Renewbutton.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5    
+initial enrollment on radio node
+   Add image path       ${IMAGE_PATH}
+   click   terminal1.png
+   sleep   5
+   wait until screen contain   design_new.png   30
+   click   design_new.png
+   sleep   5
+   input text   design_new.png   ssh -X root@atvts1465.athtem.eei.ericsson.se
+   press special key   ENTER
+   wait until screen contain   password3.png   30
+   input text   password3.png   shroot
+   press special key   ENTER
+   sleep   5
+   input text   design4.png   ssh -X caas007@omsas
+   press special key   ENTER
+   wait until screen contain   Password5.png   30
+   input text   Password5.png   caas123
+   press special key   ENTER
+   sleep   5
+   click   maximize6.png
+   sleep   5
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   initenroll9.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   closebutton18.png
+   sleep   10
+corba distributor on radio node
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiCaasAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   caasgui19.png   30
+   click   distributor20.png
+   sleep   5
+   click   corbapeers21.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+laad distributor on radio node
+   click   distributor20.png
+   sleep   5
+   click   laadtab25.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   caasguiclose28.png 
+renew on radio node
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   Renewtab.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   reasontab.png
+   sleep   5
+   press special key	DOWN
+   press special key	DOWN
+   press special key	DOWN
+   press special key	ENTER
+   click   Renewbutton.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5    
+corba distributor multiple different nodes
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiCaasAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   caasgui19.png   30
+   click   distributor20.png
+   sleep   5
+   click   corbapeers21.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+laad distributor multiple different nodes
+   click   distributor20.png
+   sleep   5
+   click   laadtab25.png 
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode2.png   30
+   click   enode2.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode1.png   30
+   click   rnode1.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   wait until screen contain   confirmtab24.png   30
+   click   yestab27.png
+   sleep   5
+   click   jobbutton15.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+   click   caasguiclose28.png
+ipsec enroll on erbs node
+   wait until screen contain   omsas_home7.png   30
+   input text   omsas_home7.png   guiPkiAdmin &
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   pkigui8.png   30
+   click   initenroll9.png
+   sleep   5
+   mouse move   ipsec.png
+   click   ipsec.png
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode4.png   30
+   click   enode4.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5
+ipsec enroll on radio node
+   click   initenroll9.png
+   sleep   5
+   mouse move   ipsec.png
+   click   ipsec.png
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode2.png   30
+   click   enode4.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5   
+   click   closebutton18.png
+   sleep   10
+ipsec enroll on erbs and radio node
+   click   initenroll9.png
+   sleep   5
+   mouse move   ipsec.png
+   click   ipsec.png
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ERBS
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   enode5.png   30
+   click   enode5.png
+   sleep   5
+   click   selectiontab10.png
+   sleep   10
+   input text   selectiontab10.png   ALL
+   press special key   ENTER
+   sleep   5
+   wait until screen contain   rnode3.png   30
+   click   rnode3.png
+   sleep   5
+   click   arrow13.png
+   sleep   5
+   click   installbutton14.png
+   sleep   10
+   click   jobbutton15.png
+   wait until screen contain   switchpopup15.png   30
+   click   Yesbutton16.png
+   sleep   5
+   click   fetchjob17.png
+   sleep   25
+   click   fetchjob17.png
+   sleep   5   
+   click   closebutton18.png
+   sleep   10
+

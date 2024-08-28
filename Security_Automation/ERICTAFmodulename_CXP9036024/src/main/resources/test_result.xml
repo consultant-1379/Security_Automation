@@ -1,0 +1,184 @@
+<root param="Test_data">
+<testsuit param="MSRBSV2">	
+	<testcase param="TC01">fail</testcase>
+	<testcase param="TC02">fail</testcase>
+	<testcase param="TC03">fail</testcase>
+	<testcase param="TC04">fail</testcase>
+	<testcase param="TC05">pass</testcase>
+	<testcase param="TC06">pass</testcase>
+	<testcase param="TC07">fail</testcase>
+	<testcase param="TC08">fail</testcase>
+	<testcase param="TC09">fail</testcase>
+	<testcase param="TC10">pass</testcase>
+	<testcase param="TC11">pass</testcase>
+	<testcase param="TC12">fail</testcase>
+	<testcase param="TC13">fail</testcase>
+	<testcase param="TC14">pass</testcase>
+	<testcase param="TC15">pass</testcase>
+	<testcase param="TC16">pass</testcase>
+	<testcase param="TC17">pass</testcase>
+	<testcase param="TC18">pass</testcase>
+	<testcase param="TC19">pass</testcase>
+	<testcase param="TC20">pass</testcase>
+	<testcase param="TC21">pass</testcase>
+	<testcase param="TC22">pass</testcase>
+	<testcase param="TC23">pass</testcase>
+	<testcase param="TC24">pass</testcase>
+	<testcase param="TC25">pass</testcase>
+	<testcase param="TC26">pass</testcase>
+	<testcase param="TC27">pass</testcase>
+	<testcase param="TC28">fail</testcase>
+		<testcase param="TC29">fail</testcase>
+	<testcase param="TC30">fail</testcase>
+	<testcase param="TC31">fail</testcase>
+	<testcase param="TC32">fail</testcase>
+	<testcase param="TC33">pass</testcase>
+	<testcase param="TC34">fail</testcase>
+	<testcase param="TC35">fail</testcase>
+	<testcase param="TC36">pass</testcase>
+	<testcase param="TC37">pass</testcase>
+	<testcase param="TC38">fail</testcase>
+	<testcase param="TC39">fail</testcase>
+	<testcase param="TC40">fail</testcase>
+	<testcase param="TC41">pass</testcase>
+	<testcase param="TC42">pass</testcase>
+	<testcase param="TC43">fail</testcase>
+	<testcase param="TC44">fail</testcase>
+	<testcase param="TC45">pass</testcase>
+	<testcase param="TC46">pass</testcase>
+	<testcase param="TC47">fail</testcase>
+	<testcase param="TC48">fail</testcase>
+	<testcase param="TC49">pass</testcase>
+	<testcase param="TC50">pass</testcase>
+	 <testcase param="TC51">fail</testcase>     
+        <testcase param="TC52">fail</testcase>
+        <testcase param="TC53">fail</testcase>
+        <testcase param="TC54">fail</testcase>
+        <testcase param="TC55">fail</testcase>
+        <testcase param="TC56">fail</testcase>
+        <testcase param="TC57">pass</testcase>
+        <testcase param="TC58">pass</testcase>
+        <testcase param="TC59">pass</testcase>
+        <testcase param="TC60">fail</testcase>
+	
+</testsuit>
+<testsuit param="SSL-ciphers">	
+	<testcase param="TC06">pass</testcase>		
+</testsuit>
+<testsuit param="MULTIRAT">	
+	<testcase param="TC01">pass</testcase>	
+        <testcase param="TC02">pass</testcase>
+        <testcase param="TC03">pass</testcase>
+        <testcase param="TC04">pass</testcase>
+        <testcase param="TC05">pass</testcase>
+        <testcase param="TC06">pass</testcase>
+        <testcase param="TC07">pass</testcase>
+        <testcase param="TC08">pass</testcase>
+</testsuit>
+<testsuit param="AXE">	
+	<testcase param="TC01">pass</testcase>
+<testcase param="TC02">pass</testcase>		
+</testsuit>
+<testsuit param="CRLTesting">	
+	<testcase param="TC01">pass</testcase>		
+        <testcase param="TC02">pass</testcase>
+
+        <testcase param="TC03">pass</testcase>
+
+        <testcase param="TC04">pass</testcase>
+
+        <testcase param="TC05">pass</testcase>
+
+        <testcase param="TC06">pass</testcase>
+</testsuit>
+<testsuit param="Telstra">	
+	<testcase param="TC01">pass</testcase>
+	<testcase param="TC02">pass</testcase>
+	<testcase param="TC03">pass</testcase>
+	<testcase param="TC04">pass</testcase>
+	<testcase param="TC05">pass</testcase>
+	<testcase param="TC06">pass</testcase>
+	<testcase param="TC07">pass</testcase>	
+	<testcase param="TC08">pass</testcase>	
+	<testcase param="TC09">pass</testcase>
+	<testcase param="TC10">pass</testcase>
+	<testcase param="TC11">pass</testcase>		
+	<testcase param="TC12">pass</testcase>
+	<testcase param="TC13">pass</testcase>
+	<testcase param="TC14">pass</testcase>
+	<testcase param="TC15">pass</testcase>
+	<testcase param="TC16">pass</testcase>
+	<testcase param="TC17">pass</testcase>
+	<testcase param="TC18">pass</testcase>
+	<testcase param="TC19">pass</testcase>
+	<testcase param="TC20">pass</testcase>
+	<testcase param="TC21">pass</testcase>
+	<testcase param="TC22">pass</testcase>
+	<testcase param="TC23">pass</testcase>
+	<testcase param="TC24">pass</testcase>
+	<testcase param="TC25">pass</testcase>
+	<testcase param="TC26">fail</testcase>
+	<testcase param="TC27">fail</testcase>
+	<testcase param="TC28">pass</testcase>
+	<testcase param="TC29">pass</testcase>
+	<testcase param="TC30">pass</testcase>
+	<testcase param="TC31">pass</testcase>
+	<testcase param="TC32">pass</testcase>
+	<testcase param="TC33">pass</testcase>
+	<testcase param="TC34">pass</testcase>
+	<testcase param="TC35">pass</testcase>
+</testsuit>
+<testsuit param="CIPHER">     
+        <testcase param="TC01">pass</testcase>
+
+        <testcase param="TC02">pass</testcase>
+
+        <testcase param="TC03">pass</testcase>
+
+        <testcase param="TC04">pass</testcase>
+
+        <testcase param="TC05">pass</testcase>
+
+        <testcase param="TC06">pass</testcase>  
+		 <testcase param="TC07">pass</testcase>
+		<testcase param="TC08">pass</testcase>
+		<testcase param="TC09">pass</testcase>
+		<testcase param="TC10">pass</testcase>
+</testsuit>
+<testsuit param="RTSEL">  
+        <testcase param="TC01">pass</testcase>  
+        <testcase param="TC02">pass</testcase> 
+        <testcase param="TC03">pass</testcase>
+        <testcase param="TC04">pass</testcase>
+        <testcase param="TC05">pass</testcase>
+        <testcase param="TC06">pass</testcase>
+        <testcase param="TC07">pass</testcase>
+        <testcase param="TC08">pass</testcase>
+        <testcase param="TC09">pass</testcase>
+        <testcase param="TC10">fail</testcase>
+        <testcase param="TC11">fail</testcase>
+        <testcase param="TC12">pass</testcase>
+        <testcase param="TC13">fail</testcase>
+        <testcase param="TC14">fail</testcase>
+        <testcase param="TC15">pass</testcase>
+        <testcase param="TC16">fail</testcase>
+        <testcase param="TC17">pass</testcase>
+        <testcase param="TC18">pass</testcase>
+        <testcase param="TC19">pass</testcase>
+        <testcase param="TC20">pass</testcase>
+        <testcase param="TC21">pass</testcase>
+        <testcase param="TC22">fail</testcase>
+        <testcase param="TC23">fail</testcase>
+        <testcase param="TC24">fail</testcase>
+        <testcase param="TC25">pass</testcase>
+        <testcase param="TC26">pass</testcase>
+        <testcase param="TC27">fail</testcase>
+        <testcase param="TC28">fail</testcase>
+        <testcase param="TC29">pass</testcase>
+        <testcase param="TC30">pass</testcase>
+        <testcase param="TC31">pass</testcase>
+         <testcase param="TC32">pass</testcase>
+        <testcase param="TC33">fail</testcase>
+        <testcase param="TC34">pass</testcase>
+</testsuit>
+</root>

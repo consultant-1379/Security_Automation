@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ericsson</groupId>
+        <artifactId>master</artifactId>
+        <version>3.0</version>
+    </parent>
+
+    <groupId>com.ericsson.oss.ci</groupId>
+    <artifactId>Security_Automation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <taf_version>2.17.1</taf_version>
+        <taf_sdk>all</taf_sdk>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <target.java.version>1.7</target.java.version>
+        <taf.maven.version>2.35.0</taf.maven.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ericsson.cifwk</groupId>
+                <artifactId>taf-bom</artifactId>
+                <version>${taf_version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.ericsson.cifwk</groupId>
+                <artifactId>all-taf-sdk</artifactId>
+                <version>${taf_version}</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.ericsson.cifwk.taf</groupId>
+                    <artifactId>taf-maven-plugin</artifactId>
+                    <version>${taf.maven.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>${target.java.version}</source>
+                        <target>${target.java.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.16</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.16</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>com.ericsson.cifwk.taf</groupId>
+                <artifactId>taf-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>findbugs</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!--
+                        To run TAF FindBugs rules checks locally (in project root folder):
+                        'mvn clean install -Pfindbugs -DskipTests'
+
+                        To see TAF FindBugs report (in project root folder):
+                        'mvn -Pfindbugs findbugs:gui'
+                        -->
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>findbugs-maven-plugin</artifactId>
+                        <version>3.0.3</version>
+                        <configuration>
+                            <plugins>
+                                <plugin>
+                                    <groupId>com.ericsson.cifwk</groupId>
+                                    <artifactId>taf-findbugs-plugin</artifactId>
+                                    <version>${taf_version}</version>
+                                </plugin>
+                            </plugins>
+                            <failOnError>true</failOnError>
+                            <fork>false</fork>
+                            <threshold>Low</threshold>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>check-code</id>
+                                <phase>compile</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
+  <scm>
+    <tag>taf-archetype-pom-3.0.11</tag>
+  </scm>
+  <modules>
+    <module>ERICTAFmodulename_operators</module>
+    <module>ERICTAFmodulename_CXP9036024</module>
+    <module>test-pom-Security_Automation</module>
+  </modules>
+</project>
